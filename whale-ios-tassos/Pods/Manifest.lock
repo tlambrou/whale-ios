@@ -1,0 +1,21 @@
+PODS:
+  - Alamofire (4.3.0)
+  - Gloss (1.2.1)
+  - KeychainSwift (7.0.0)
+  - Kingfisher (3.5.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - Gloss
+  - KeychainSwift
+  - Kingfisher
+
+SPEC CHECKSUMS:
+  Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
+  Gloss: 9ab33b8ede01e4232571d43a6bf9259b85d1de69
+  KeychainSwift: b6947435dd78cc442c64a84ae648dd0e871cf448
+  Kingfisher: 7c62087039d93d26c54c8dd9b0b588d2ce55cef6
+
+PODFILE CHECKSUM: c0569fe8062e0c8be8a2670ab37e22bd42e671bf
+
+COCOAPODS: 1.2.0
