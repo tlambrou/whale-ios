@@ -10,5 +10,6 @@ target 'whale-ios-tassos' do
   pod 'Gloss'
   pod 'KeychainSwift'
   pod 'Alamofire'
+  pod 'KeychainAccess'
 
 end
