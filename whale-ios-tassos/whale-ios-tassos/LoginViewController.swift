@@ -36,6 +36,11 @@ class LoginViewController: ViewController {
     Alamofire.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: nil).responseJSON { response in
       switch response.result {
       case .success(let data):
+        if let token = response.response?.allHeaderFields["Authorization"] as? String{
+          let keychain = KeychainSwift()
+          keychain.set(token, forKey: "token")
+          
+        }
         print("Successful login network call")
         self.credentialLabel.textColor = UIColor.green
         self.credentialLabel.text = "The Credentials Were Correct"
@@ -46,11 +51,19 @@ class LoginViewController: ViewController {
         print("Network call for login failure")
         self.credentialLabel.textColor = UIColor.red
         self.credentialLabel.text = "The Credentials Were Incorrect"
-        print("\n\ncredentials were incorrect\n\n")
+        print("\n\ncredentials were incorrect\n\n", String(describing: response.error))
         self.emailTextField.resignFirstResponder()
         self.passwordTextField.resignFirstResponder()
       }
     }
     
   }
+  
+}
+
+func login() {
+  
+  let keychain = KeychainSwift()
+  if keychain.get("token") ==
+  
 }

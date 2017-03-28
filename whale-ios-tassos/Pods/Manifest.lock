@@ -4,6 +4,7 @@ PODS:
   - KeychainAccess (3.0.1)
   - KeychainSwift (7.0.0)
   - Kingfisher (3.5.0)
+  - SwiftyOnboard (1.0.2)
 
 DEPENDENCIES:
   - Alamofire
@@ -11,6 +12,7 @@ DEPENDENCIES:
   - KeychainAccess
   - KeychainSwift
   - Kingfisher
+  - SwiftyOnboard
 
 SPEC CHECKSUMS:
   Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
@@ -18,7 +20,8 @@ SPEC CHECKSUMS:
   KeychainAccess: 017ea25e313a49eda10bb19b0bb0760fb1edfe1a
   KeychainSwift: b6947435dd78cc442c64a84ae648dd0e871cf448
   Kingfisher: 7c62087039d93d26c54c8dd9b0b588d2ce55cef6
+  SwiftyOnboard: 5a49d81d7762cf4b18d21b1510ee8392c5cb9619
 
-PODFILE CHECKSUM: cb580a01f90f3055012dd9928f6762f257e942ab
+PODFILE CHECKSUM: 7223654102630fd3f38973444df6f90f3f97f385
 
 COCOAPODS: 1.2.0
