@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9655DD921E8AFF0400CA3A43 /* WhaleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9655DD911E8AFF0400CA3A43 /* WhaleAPI.swift */; };
 		96D7CEC61E8909DF00EA516C /* JSONAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D7CEC51E8909DF00EA516C /* JSONAnswer.swift */; };
 		96DA509F1E805CC700CC3A45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DA509E1E805CC700CC3A45 /* AppDelegate.swift */; };
 		96DA50A11E805CC700CC3A45 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DA50A01E805CC700CC3A45 /* ActivityViewController.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		7228E8DF5F6DCE6D1D2FB2F5 /* Pods-whale-ios-tassos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whale-ios-tassos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-whale-ios-tassos/Pods-whale-ios-tassos.debug.xcconfig"; sourceTree = "<group>"; };
+		9655DD911E8AFF0400CA3A43 /* WhaleAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WhaleAPI.swift; path = "whale-ios-tassos/WhaleAPI.swift"; sourceTree = "<group>"; };
 		96D7CEC51E8909DF00EA516C /* JSONAnswer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONAnswer.swift; sourceTree = "<group>"; };
 		96DA509B1E805CC700CC3A45 /* whale-ios-tassos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "whale-ios-tassos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96DA509E1E805CC700CC3A45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "whale-ios-tassos/AppDelegate.swift"; sourceTree = "<group>"; };
@@ -57,6 +59,14 @@
 				C1C5234D16C54DC9174EA26E /* Pods-whale-ios-tassos.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		9655DD901E8AFED800CA3A43 /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				9655DD911E8AFF0400CA3A43 /* WhaleAPI.swift */,
+			);
+			name = APIClient;
 			sourceTree = "<group>";
 		};
 		96D7CEC41E8909B900EA516C /* Models */ = {
@@ -161,6 +171,7 @@
 		96DA50B71E805DF700CC3A45 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				9655DD901E8AFED800CA3A43 /* APIClient */,
 				96D7CEC41E8909B900EA516C /* Models */,
 			);
 			name = Networking;
@@ -321,6 +332,7 @@
 				96E253FE1E82FB2D001D4AA5 /* LoginViewController.swift in Sources */,
 				96DA50A11E805CC700CC3A45 /* ActivityViewController.swift in Sources */,
 				96DA509F1E805CC700CC3A45 /* AppDelegate.swift in Sources */,
+				9655DD921E8AFF0400CA3A43 /* WhaleAPI.swift in Sources */,
 				96E253FB1E82FA76001D4AA5 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

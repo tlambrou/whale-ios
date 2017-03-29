@@ -13,7 +13,7 @@ import KeychainSwift
 import Alamofire
 import KeychainAccess
 
-class LoginViewController: ViewController {
+class LoginViewController: UIViewController {
   
   @IBOutlet weak var emailTextField: UITextField!
   
@@ -39,6 +39,7 @@ class LoginViewController: ViewController {
         if let token = response.response?.allHeaderFields["Authorization"] as? String{
           let keychain = KeychainSwift()
           keychain.set(token, forKey: "token")
+          keychain.set(true, forKey: "key")
           
         }
         print("Successful login network call")
@@ -61,9 +62,9 @@ class LoginViewController: ViewController {
   
 }
 
-func login() {
-  
-  let keychain = KeychainSwift()
-  if keychain.get("token") ==
-  
-}
+//func login() {
+//
+//  let keychain = KeychainSwift()
+////  if keychain.get("token") ==
+//  
+//}

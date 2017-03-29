@@ -50,7 +50,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="4gA-Qr-Xkh">
             <objects>
-                <tabBarController id="15m-se-NnG" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="home" id="15m-se-NnG" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="bXB-Cs-crX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -68,7 +68,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="whale_ios_tassos" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="login" id="BYZ-38-t0r" customClass="LoginViewController" customModule="whale_ios_tassos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -121,7 +121,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-391.875" y="-39.08450704225352"/>
+            <point key="canvasLocation" x="-2400" y="-1016"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="Dgz-qL-aOE">
