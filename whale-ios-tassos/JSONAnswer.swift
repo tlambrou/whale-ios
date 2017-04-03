@@ -9,6 +9,29 @@
 import Foundation
 import Gloss
 
+struct PageData<Tassos: Decodable> {
+  var totalPages: Int = 0
+  var pageSize: Int = 0
+  var currentPage: Int = 0
+  let data: [Tassos]
+}
+
+
+extension PageData: Decodable {
+  init?(json: JSON) {
+    guard let data: [Tassos] = "data" <~~ json,
+      let totalPages: Int = "total_pages" <~~ json,
+      let pageSize: Int = "per_page" <~~ json,
+      let currentPage: Int = "page" <~~ json
+      else {return nil}
+    
+    self.data = data
+    self.totalPages = totalPages
+    self.pageSize = pageSize
+    self.currentPage = currentPage
+  }
+}
+
 struct JSONAnswer {
   let id: Int
   let videoURL: URL
@@ -18,12 +41,13 @@ struct JSONAnswer {
   let commentsCount: Int
 }
 
+
 extension JSONAnswer: Decodable {
   init?(json: JSON) {
     guard let id: Int = "id" <~~ json,
       let videoURL: URL = "video_url" <~~ json,
       let thumbnailURL: URL = "thumbnail_url" <~~ json
-   //   let question: JSONQuestion = "question" <~~ json
+      //   let question: JSONQuestion = "question" <~~ json
       else {return nil}
     
     self.id = id
@@ -35,11 +59,7 @@ extension JSONAnswer: Decodable {
   }
 }
 
-/*let task = session.dataTaskWithRequest(urlRequest) { data, response, error in
-  if let data = data {
-    let json = try! NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions(rawValue: 0))
-    let post = JSONAnswer(json: json as! JSON)
-    print(post)
-  }
-} */
-//postTask.resume()
+//let answerData = response.map(PageData<JSONAnswer>.self)
+//answerData.data
+
+

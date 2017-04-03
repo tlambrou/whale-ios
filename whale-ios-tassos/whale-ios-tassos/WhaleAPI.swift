@@ -10,8 +10,9 @@ import Foundation
 import Alamofire
 import KeychainSwift
 
-let apiKey = "56beeef0c5e34b939e93ac369ff28438"
 
-func login() {
+class WhaleAPI {
+  
+  
   
 }
