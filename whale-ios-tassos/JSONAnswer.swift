@@ -39,6 +39,10 @@ struct JSONAnswer {
   //let question: JSONQuestion
   let likesCount: Int
   let commentsCount: Int
+  let username: String
+  let firstName: String
+  let lastName: String
+  
 }
 
 
@@ -46,7 +50,10 @@ extension JSONAnswer: Decodable {
   init?(json: JSON) {
     guard let id: Int = "id" <~~ json,
       let videoURL: URL = "video_url" <~~ json,
-      let thumbnailURL: URL = "thumbnail_url" <~~ json
+      let thumbnailURL: URL = "thumbnail_url" <~~ json,
+      let username: String = "username" <~~ json,
+      let firstName: String = "first_name" <~~ json,
+      let lastName: String = "last_name" <~~ json
       //   let question: JSONQuestion = "question" <~~ json
       else {return nil}
     
@@ -56,6 +63,9 @@ extension JSONAnswer: Decodable {
     //self.question = question
     self.likesCount = "likes_count" <~~ json ?? 0
     self.commentsCount = "comment_count" <~~ json ?? 0
+    self.username = username
+    self.firstName = firstName
+    self.lastName = lastName
   }
 }
 

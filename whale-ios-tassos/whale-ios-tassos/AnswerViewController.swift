@@ -7,3 +7,15 @@
 //
 
 import Foundation
+import UIKit
+
+class AnswerViewController: UIViewController {
+  
+  @IBOutlet weak var answerCollectionView: UICollectionView!
+  
+  override func viewDidLoad() {
+    let answerCell = UINib(nibName: "AnswerCollectionViewCell", bundle: Bundle.main)
+    answerCollectionView.register(answerCell, forCellWithReuseIdentifier: "AnswerCollectionViewCell")
+  }
+  
+}

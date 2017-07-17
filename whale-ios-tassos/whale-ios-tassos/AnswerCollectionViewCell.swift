@@ -13,5 +13,17 @@ import UIKit
 class AnswerCollectionViewCell: UICollectionViewCell {
   
   
+  @IBOutlet weak var nameLabel: UILabel!
+  @IBOutlet weak var profileImage: UIImageView!
+  @IBOutlet weak var questionLabel: UITextView!
+  
+  let answer: Answer? = nil
+
+  var answerCellViewModel: JSONAnswer? {
+    didSet {
+      nameLabel.text = answerCellViewModel?.username
+      
+    }
+  }
   
 }

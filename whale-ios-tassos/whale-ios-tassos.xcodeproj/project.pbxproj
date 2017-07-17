@@ -12,12 +12,14 @@
 		966F56F81E92C82C006B725F /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966F56F71E92C82C006B725F /* AnswerViewController.swift */; };
 		966F56FA1E92C851006B725F /* AnswerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966F56F91E92C851006B725F /* AnswerCollectionViewCell.swift */; };
 		966F56FC1E92C8BF006B725F /* AnswerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 966F56FB1E92C8BF006B725F /* AnswerCollectionViewCell.xib */; };
+		96AE2DDC1E9801F000C2D383 /* AnswerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AE2DDB1E9801F000C2D383 /* AnswerViewModel.swift */; };
 		96D7CEC61E8909DF00EA516C /* JSONAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D7CEC51E8909DF00EA516C /* JSONAnswer.swift */; };
 		96DA509F1E805CC700CC3A45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DA509E1E805CC700CC3A45 /* AppDelegate.swift */; };
 		96DA50A11E805CC700CC3A45 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DA50A01E805CC700CC3A45 /* ActivityViewController.swift */; };
 		96DA50A41E805CC700CC3A45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96DA50A21E805CC700CC3A45 /* Main.storyboard */; };
 		96DA50A61E805CC700CC3A45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96DA50A51E805CC700CC3A45 /* Assets.xcassets */; };
 		96DA50A91E805CC700CC3A45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96DA50A71E805CC700CC3A45 /* LaunchScreen.storyboard */; };
+		96E10C9B1E955F93005A39D0 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E10C9A1E955F93005A39D0 /* Comment.swift */; };
 		96E253F61E82F26B001D4AA5 /* ActivityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96E253F51E82F26B001D4AA5 /* ActivityView.xib */; };
 		96E253FB1E82FA76001D4AA5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E253FA1E82FA76001D4AA5 /* HomeViewController.swift */; };
 		96E253FE1E82FB2D001D4AA5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E253FD1E82FB2D001D4AA5 /* LoginViewController.swift */; };
@@ -32,6 +34,7 @@
 		966F56F71E92C82C006B725F /* AnswerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnswerViewController.swift; path = "whale-ios-tassos/AnswerViewController.swift"; sourceTree = "<group>"; };
 		966F56F91E92C851006B725F /* AnswerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnswerCollectionViewCell.swift; path = "whale-ios-tassos/AnswerCollectionViewCell.swift"; sourceTree = "<group>"; };
 		966F56FB1E92C8BF006B725F /* AnswerCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AnswerCollectionViewCell.xib; path = "whale-ios-tassos/AnswerCollectionViewCell.xib"; sourceTree = "<group>"; };
+		96AE2DDB1E9801F000C2D383 /* AnswerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnswerViewModel.swift; path = "whale-ios-tassos/AnswerViewModel.swift"; sourceTree = "<group>"; };
 		96D7CEC51E8909DF00EA516C /* JSONAnswer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONAnswer.swift; sourceTree = "<group>"; };
 		96DA509B1E805CC700CC3A45 /* whale-ios-tassos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "whale-ios-tassos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96DA509E1E805CC700CC3A45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "whale-ios-tassos/AppDelegate.swift"; sourceTree = "<group>"; };
@@ -40,6 +43,7 @@
 		96DA50A51E805CC700CC3A45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "whale-ios-tassos/Assets.xcassets"; sourceTree = "<group>"; };
 		96DA50A81E805CC700CC3A45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96DA50AA1E805CC700CC3A45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "whale-ios-tassos/Info.plist"; sourceTree = "<group>"; };
+		96E10C9A1E955F93005A39D0 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Comment.swift; path = "whale-ios-tassos/Comment.swift"; sourceTree = "<group>"; };
 		96E253F51E82F26B001D4AA5 /* ActivityView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ActivityView.xib; path = "whale-ios-tassos/ActivityView.xib"; sourceTree = "<group>"; };
 		96E253FA1E82FA76001D4AA5 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = "whale-ios-tassos/HomeViewController.swift"; sourceTree = "<group>"; };
 		96E253FD1E82FB2D001D4AA5 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = "whale-ios-tassos/LoginViewController.swift"; sourceTree = "<group>"; };
@@ -81,6 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				96D7CEC51E8909DF00EA516C /* JSONAnswer.swift */,
+				96E10C9A1E955F93005A39D0 /* Comment.swift */,
+				96AE2DDB1E9801F000C2D383 /* AnswerViewModel.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -341,11 +347,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96AE2DDC1E9801F000C2D383 /* AnswerViewModel.swift in Sources */,
 				966A3B371E8E6A3700A597C5 /* ActivityCollectionViewCell.swift in Sources */,
 				96D7CEC61E8909DF00EA516C /* JSONAnswer.swift in Sources */,
 				96E253FE1E82FB2D001D4AA5 /* LoginViewController.swift in Sources */,
 				96DA50A11E805CC700CC3A45 /* ActivityViewController.swift in Sources */,
 				966F56FA1E92C851006B725F /* AnswerCollectionViewCell.swift in Sources */,
+				96E10C9B1E955F93005A39D0 /* Comment.swift in Sources */,
 				966F56F81E92C82C006B725F /* AnswerViewController.swift in Sources */,
 				96DA509F1E805CC700CC3A45 /* AppDelegate.swift in Sources */,
 				9655DD921E8AFF0400CA3A43 /* WhaleAPI.swift in Sources */,

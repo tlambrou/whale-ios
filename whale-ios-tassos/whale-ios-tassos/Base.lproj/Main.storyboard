@@ -12,7 +12,7 @@
         <!--Search-->
         <scene sceneID="k6j-2W-53h">
             <objects>
-                <viewController id="8Yw-3d-xKU" sceneMemberID="viewController">
+                <viewController id="8Yw-3d-xKU" customClass="AnswerViewController" customModule="whale_ios_tassos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7dT-ZU-nUj"/>
                         <viewControllerLayoutGuide type="bottom" id="Zhd-Dc-5JC"/>
@@ -20,14 +20,31 @@
                     <view key="view" contentMode="scaleToFill" id="vXj-CR-N4j">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qd1-U4-FBg">
+                                <rect key="frame" x="16" y="11" width="288" height="280"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ICN-dt-qdT">
+                                    <size key="itemSize" width="186" height="151"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Search" image="search" selectedImage="searchSelected" id="uSg-o9-Etr"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="answerCollectionView" destination="qd1-U4-FBg" id="TC9-8G-mK4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CnZ-PW-8cS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-386" y="54"/>
+            <point key="canvasLocation" x="-386.25" y="53.87323943661972"/>
         </scene>
         <!--Profile-->
         <scene sceneID="80X-Gh-VSy">
